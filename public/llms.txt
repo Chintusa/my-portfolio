@@ -1,0 +1,25 @@
+# Jhasaketan Sa — Full Stack & Backend Developer
+
+> Full Stack Developer & Java Backend Architect specializing in Java (Spring Boot), Python (Django, DRF), React, and Machine Learning systems.
+
+## Summary
+- **Name**: Jhasaketan Sa
+- **Role**: Full Stack Developer & Java Backend Engineer
+- **Location**: Bhubaneswar, Odisha, India
+- **Email**: jhasketansa86@gmail.com
+- **GitHub**: https://github.com/Chintusa
+- **LinkedIn**: https://linkedin.com/in/jhasaketan-sa-a999bb219/
+
+## Core Competencies
+- **Backend & APIs**: Java, Spring Boot, Spring Security, Hibernate/JPA, Python, Django, Django REST Framework, RESTful APIs, Microservices, JWT Authentication
+- **Databases**: PostgreSQL, MySQL, MongoDB, Redis, Database Schema Design, Query Optimization
+- **Frontend**: React, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, Responsive Design, State Management
+- **AI / ML**: Machine Learning pipelines, Geospatial Data Processing (LULC), Data Preprocessing, PyTorch, Scikit-learn
+- **DevOps & Tools**: Docker, Git/GitHub, Linux, REST API Architecture, CI/CD, Agile Sprints
+
+## Key Projects
+1. **LULC (Land Use Land Cover Classification)**: Machine Learning satellite imagery analysis with automated data pipelines and RESTful backend APIs.
+2. **Quotient**: High-performance task, workflow, and user management backend built with Django REST Framework and PostgreSQL.
+3. **School Management System**: Enterprise Java J2EE system for student records, staff operations, and administrative dashboards.
+4. **Alambana Management Platform**: Real-time student support and communication platform with Firebase and cloud authentication.
+5. **Movie Tracker API**: Spring Boot RESTful API with JPA, MySQL, and analytics endpoints.

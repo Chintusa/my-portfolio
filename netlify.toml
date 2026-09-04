@@ -1,0 +1,51 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+# API & Serverless Function Rewrite
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# Do NOT return index.html for missing static assets under /assets/*
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 404
+
+# SPA Fallback: ensure direct page navigation or refresh routes to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Aggressive Immutable Caching for Hashed Static Assets (Vite outputs /assets/*)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+  Cache-Control = "public, max-age=31536000, immutable"
+
+# Static fonts and favicons
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+  Cache-Control = "public, max-age=31536000, immutable"
+
+# Security & performance headers for HTML and global pages
+[[headers]]
+  for = "/*"
+  [headers.values]
+  X-Frame-Options = "DENY"
+  X-Content-Type-Options = "nosniff"
+  X-XSS-Protection = "1; mode=block"
+  Referrer-Policy = "strict-origin-when-cross-origin"
+  Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+  Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# HTML: Always revalidate so users receive new deploys instantly
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+  Cache-Control = "public, max-age=0, must-revalidate"

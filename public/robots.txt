@@ -1,0 +1,26 @@
+# robots.txt for Jhasaketan Sa Portfolio
+User-agent: *
+Allow: /
+Disallow: /dist/
+Disallow: /node_modules/
+
+# AI Crawlers & Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://ais-pre-aq6hgetxwbp7e5l5p2vu2b-534870587795.asia-east1.run.app/sitemap.xml

@@ -1,0 +1,204 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: 'Plus Jakarta Sans', 'Geist Variable', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', 'Geist Variable', sans-serif;
+    --font-handwritten: 'Caveat', cursive;
+}
+
+/* Base Default Theme: Neon Blue (Midnight) */
+:root,
+html.theme-blue,
+html[data-theme="midnight"] {
+    --site-bg: #030712;
+    --site-card-bg: rgba(15, 23, 42, 0.7);
+    --site-card-border: rgba(148, 163, 184, 0.12);
+    --site-card-hover: rgba(15, 23, 42, 0.9);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-subtle: #64748b;
+
+    --accent-primary: #3b82f6;
+    --accent-secondary: #6366f1;
+    --accent-tertiary: #8b5cf6;
+    --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #6366f1 50%, #8b5cf6 100%);
+    --accent-glow: rgba(59, 130, 246, 0.35);
+    --accent-badge-bg: rgba(59, 130, 246, 0.12);
+    --accent-badge-border: rgba(59, 130, 246, 0.35);
+    --accent-shadow: 0 4px 20px rgba(59, 130, 246, 0.35);
+}
+
+/* 2. Cyber Violet (Purple Theme) */
+html.theme-purple,
+html[data-theme="purple"] {
+    --site-bg: #090314;
+    --site-card-bg: rgba(28, 12, 50, 0.7);
+    --site-card-border: rgba(168, 85, 247, 0.2);
+    --site-card-hover: rgba(38, 16, 68, 0.9);
+    --text-main: #faf5ff;
+    --text-muted: #d8b4fe;
+    --text-subtle: #a855f7;
+
+    --accent-primary: #a855f7;
+    --accent-secondary: #c084fc;
+    --accent-tertiary: #ec4899;
+    --accent-gradient: linear-gradient(135deg, #a855f7 0%, #c084fc 50%, #ec4899 100%);
+    --accent-glow: rgba(168, 85, 247, 0.45);
+    --accent-badge-bg: rgba(168, 85, 247, 0.15);
+    --accent-badge-border: rgba(168, 85, 247, 0.45);
+    --accent-shadow: 0 4px 20px rgba(168, 85, 247, 0.45);
+}
+
+/* 3. Matrix Green (Emerald Theme) */
+html.theme-emerald,
+html[data-theme="emerald"] {
+    --site-bg: #01130a;
+    --site-card-bg: rgba(4, 38, 22, 0.7);
+    --site-card-border: rgba(16, 185, 129, 0.22);
+    --site-card-hover: rgba(6, 52, 30, 0.9);
+    --text-main: #ecfdf5;
+    --text-muted: #6ee7b7;
+    --text-subtle: #10b981;
+
+    --accent-primary: #10b981;
+    --accent-secondary: #059669;
+    --accent-tertiary: #06b6d4;
+    --accent-gradient: linear-gradient(135deg, #10b981 0%, #059669 50%, #06b6d4 100%);
+    --accent-glow: rgba(16, 185, 129, 0.45);
+    --accent-badge-bg: rgba(16, 185, 129, 0.15);
+    --accent-badge-border: rgba(16, 185, 129, 0.45);
+    --accent-shadow: 0 4px 20px rgba(16, 185, 129, 0.45);
+}
+
+/* 4. Sunset Gold (Amber Theme) */
+html.theme-amber,
+html[data-theme="amber"] {
+    --site-bg: #140a02;
+    --site-card-bg: rgba(44, 21, 6, 0.7);
+    --site-card-border: rgba(245, 158, 11, 0.22);
+    --site-card-hover: rgba(60, 29, 8, 0.9);
+    --text-main: #fffbeb;
+    --text-muted: #fde68a;
+    --text-subtle: #f59e0b;
+
+    --accent-primary: #f59e0b;
+    --accent-secondary: #ea580c;
+    --accent-tertiary: #ef4444;
+    --accent-gradient: linear-gradient(135deg, #f59e0b 0%, #ea580c 50%, #ef4444 100%);
+    --accent-glow: rgba(245, 158, 11, 0.45);
+    --accent-badge-bg: rgba(245, 158, 11, 0.15);
+    --accent-badge-border: rgba(245, 158, 11, 0.45);
+    --accent-shadow: 0 4px 20px rgba(245, 158, 11, 0.45);
+}
+
+/* 5. Light Mode Theme */
+html.light,
+html[data-theme="light"] {
+    --site-bg: #f8fafc;
+    --site-card-bg: rgba(255, 255, 255, 0.92);
+    --site-card-border: rgba(203, 213, 225, 0.85);
+    --site-card-hover: rgba(241, 245, 249, 0.98);
+    --text-main: #0f172a;
+    --text-muted: #334155;
+    --text-subtle: #64748b;
+
+    --accent-primary: #2563eb;
+    --accent-secondary: #4f46e5;
+    --accent-tertiary: #7c3aed;
+    --accent-gradient: linear-gradient(135deg, #2563eb 0%, #4f46e5 50%, #7c3aed 100%);
+    --accent-glow: rgba(37, 99, 235, 0.22);
+    --accent-badge-bg: rgba(37, 99, 235, 0.08);
+    --accent-badge-border: rgba(37, 99, 235, 0.35);
+    --accent-shadow: 0 4px 20px rgba(37, 99, 235, 0.25);
+}
+
+@layer base {
+  body {
+    background-color: var(--site-bg);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', 'Geist Variable', sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  html {
+    font-family: 'Plus Jakarta Sans', 'Geist Variable', sans-serif;
+    background-color: var(--site-bg);
+    color: var(--text-main);
+  }
+}
+
+/* Custom Cursive Handwritten Accent */
+.font-handwritten {
+  font-family: 'Caveat', cursive;
+}
+
+/* Theme Reactive Utilities */
+.text-accent {
+  color: var(--accent-primary) !important;
+}
+
+.text-accent-gradient {
+  background: var(--accent-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.bg-accent-gradient {
+  background: var(--accent-gradient) !important;
+}
+
+.bg-accent-solid {
+  background-color: var(--accent-primary) !important;
+}
+
+.bg-accent-badge {
+  background-color: var(--accent-badge-bg) !important;
+  border: 1px solid var(--accent-badge-border) !important;
+  color: var(--accent-primary) !important;
+}
+
+.border-accent-badge {
+  border-color: var(--accent-badge-border) !important;
+}
+
+.shadow-accent-glow {
+  box-shadow: var(--accent-shadow) !important;
+}
+
+.theme-card {
+  background: var(--site-card-bg);
+  border: 1px solid var(--site-card-border);
+  color: var(--text-main);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.theme-card:hover {
+  background: var(--site-card-hover);
+  border-color: var(--accent-badge-border);
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--site-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--site-card-border);
+  border-radius: 9999px;
+  border: 2px solid var(--site-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
