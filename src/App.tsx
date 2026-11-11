@@ -597,6 +597,10 @@ export default function App() {
                         width={600}
                         height={375}
                         referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=1000&auto=format&fit=crop&q=80';
+                        }}
                         className="w-full h-full object-cover opacity-80 group-hover:opacity-95 group-hover:scale-105 transition-all duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[var(--site-bg)] via-transparent to-transparent opacity-80" />
@@ -903,6 +907,11 @@ export default function App() {
                 <img
                   src={activeProject.image}
                   alt={activeProject.title}
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=1000&auto=format&fit=crop&q=80';
+                  }}
                   className="w-full h-full object-cover opacity-60"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--site-bg)] via-transparent to-transparent" />
@@ -1039,6 +1048,7 @@ export default function App() {
               <div className="px-6 sm:px-8 py-3 border-b border-[var(--site-card-border)] flex flex-wrap gap-2">
                 {[
                   { id: 'all', label: 'All Projects' },
+                  { id: 'frontend', label: 'Frontend' },
                   { id: 'fullstack', label: 'Full Stack' },
                   { id: 'ml-ai', label: 'AI & ML' },
                   { id: '3d-webgl', label: '3D WebGL' },

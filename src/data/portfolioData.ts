@@ -244,12 +244,78 @@ export const timeline: TimelineItem[] = [
 
 export const projects: Project[] = [
   {
+    id: 'proj-luxury-lens',
+    title: 'Luxury Lens Studio (Lumière)',
+    description: 'An editorial luxury destination wedding photography and cinematography showcase with noir-gold aesthetic.',
+    longDescription: 'Lumière Luxury Lens Studio is a world-class editorial photography and cinematography showcase platform engineered for luxury destination weddings across Paris, Lake Como, Udaipur, and Bali. Designed with a bespoke noir-and-champagne gold aesthetic, it features 60fps Framer Motion transitions, full-bleed film reels, client story showcases, and an interactive consultation booking interface.',
+    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=85&w=1200',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Radix UI', 'Vite'],
+    githubUrl: 'https://github.com/Chintusa/Luxury-Lens-Studio',
+    liveUrl: 'https://chintusa.github.io/Luxury-Lens-Studio/',
+    featured: true,
+    category: 'frontend',
+    categoryLabel: 'Luxury Showcase',
+    role: 'Frontend Architect & UI Designer',
+    primaryRuntime: 'React 19 / TypeScript / Vite',
+    databaseCloud: 'GitHub Pages CI/CD & Netlify',
+    highlights: [
+      'Crafted bespoke noir-gold editorial typography and responsive glassmorphic cards with Radix UI primitives.',
+      'Integrated 60fps Framer Motion scroll-driven reveals and fluid cinematic transitions.',
+      'Constructed responsive multi-category photo/film reel galleries with modal viewports and consultation forms.',
+      'Deployed via automated GitHub Actions workflow with zero layout shift and 100/100 Lighthouse performance.'
+    ]
+  },
+  {
+    id: 'proj-odisha-cover',
+    title: 'Odisha Cover Studio',
+    description: 'A specialized cultural lifestyle e-commerce and mobile cover customization studio showcasing Sambalpuri Ikat & Jagannath art.',
+    longDescription: 'Odisha Cover Studio is an authentic lifestyle and mobile accessories digital platform celebrating Odishan culture and heritage. It features high-resolution Sambalpuri, Jagannath, and tribal artwork collections, an interactive custom printing inquiry flow, mobile back lamination appointment booking, and a dedicated wholesale partner program with 1-click WhatsApp checkout.',
+    image: 'https://images.unsplash.com/photo-1598414726047-c0af34b33ab0?w=1000&auto=format&fit=crop&q=80',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'E-Commerce', 'WhatsApp API'],
+    githubUrl: 'https://github.com/Chintusa/Odisha-Cover-Studio',
+    liveUrl: 'https://chintusa.github.io/Odisha-Cover-Studio/',
+    featured: true,
+    category: 'frontend',
+    categoryLabel: 'Cultural E-Commerce',
+    role: 'Lead Frontend Engineer',
+    primaryRuntime: 'React 19 / TypeScript / Vite',
+    databaseCloud: 'GitHub Pages & WhatsApp Business API',
+    highlights: [
+      'Engineered interactive Sambalpuri Ikat, Jagannath, and tribal pattern mobile skin customizer.',
+      'Integrated 1-click instant WhatsApp checkout dispatching item SKU, phone model, and delivery address.',
+      'Built mobile back lamination appointment booking system with real-time slot selection.',
+      'Designed custom cultural vector icons and SVG branding with sub-second asset hydration.'
+    ]
+  },
+  {
+    id: 'proj-luxury-hospitality',
+    title: 'AURA Sanctuary & Private Residences',
+    description: 'An ultra-luxury hospitality destination web app featuring cliffside private villa showcases, Michelin dining, and concierge booking.',
+    longDescription: 'AURA Sanctuary & Private Residences is a flagship ultra-luxury hospitality web platform designed for discerning global travelers. Features interactive cliffside villa tours, curated seasonal experience itineraries, holistic spa wellness booking, Michelin-starred fine dining menus, and an automated private concierge inquiry channel.',
+    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1000&auto=format&fit=crop&q=80',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite', 'Hospitality'],
+    githubUrl: 'https://github.com/Chintusa/luxury-hospitality',
+    liveUrl: 'https://chintusa.github.io/luxury-hospitality/',
+    featured: true,
+    category: 'fullstack',
+    categoryLabel: 'Luxury Hospitality',
+    role: 'Full Stack Web Engineer',
+    primaryRuntime: 'React 19 / TypeScript / Vite',
+    databaseCloud: 'GitHub Pages & Cloud Infrastructure',
+    highlights: [
+      'Interactive luxury private villa showcase with full-bleed photography and virtual walk-throughs.',
+      'Michelin-starred restaurant culinary menu showcase and private dining reservation desk.',
+      'Holistic wellness spa treatment scheduler and seasonal experience itineraries.',
+      'Concierge inquiry channel with automated form validation and responsive mobile layouts.'
+    ]
+  },
+  {
     id: 'proj-pos-billing',
-    title: 'Smart Bill — POS Billing App',
-    description: 'A modern retail POS & inventory billing application built for Samaleswari Bastralaya.',
-    longDescription: 'Smart Bill is a high-speed Point of Sale (POS) and inventory billing system built for retail operations at Samaleswari Bastralaya. It streamlines sales checkout, automated invoice generation, barcode scanning, product stock management, and thermal receipt printing with real-time analytics.',
-    image: '/images/smartbill-pos.png',
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'POS / Billing'],
+    title: 'Smart Bill — POS & Retail Billing App',
+    description: 'A lightning-fast, offline-capable retail point-of-sale system built for Samaleswari Bastralaya.',
+    longDescription: 'Smart Bill is a robust, offline-first enterprise retail billing and POS system developed for busy retail and garment stores. Built by CodeNPixels, it features instant barcode/item entry, automated multi-rate GST tax compliance, keyboard-driven express checkout (F2/Ctrl+P), instant thermal printer output, PDF generation, and direct 1-tap WhatsApp invoice delivery.',
+    image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=1000&auto=format&fit=crop&q=80',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'POS / Billing', 'Netlify'],
     githubUrl: 'https://github.com/Chintusa',
     liveUrl: 'https://samaleswari-bastralay-billing.netlify.app/',
     featured: true,
@@ -262,7 +328,7 @@ export const projects: Project[] = [
       'Engineered an ultra-fast retail checkout workflow with instant sub-second barcode and product search.',
       'Implemented automated GST calculation, discounts engine, and customized printable thermal invoice receipts.',
       'Designed a responsive offline-resilient architecture with state caching and real-time inventory ledger updates.',
-      'Deployed on Netlify with automated CI/CD pipelines for seamless merchant access.'
+      'Integrated 1-tap WhatsApp invoice delivery and PDF generation for customers.'
     ]
   },
   {
@@ -271,7 +337,7 @@ export const projects: Project[] = [
     description: 'Microservices based scalable application with modern architecture.',
     longDescription: 'GenSpark is an enterprise-grade scalable microservices application engineered for high-throughput workload orchestration. Featuring decoupled services, automated routing via Spring Cloud Gateway, and distributed caching.',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
-    tags: ['React', 'Spring Cloud', 'MySQL'],
+    tags: ['React', 'Spring Cloud', 'MySQL', 'Java 17'],
     githubUrl: 'https://github.com/Chintusa',
     liveUrl: '#',
     featured: true,
@@ -290,10 +356,10 @@ export const projects: Project[] = [
   {
     id: 'proj-eonverse',
     title: 'Eonverse Time Capsule',
-    description: 'A 3D time capsule experience to preserve memories.',
+    description: 'An immersive 3D digital memory preservation platform rendered with WebGL and Three.js.',
     longDescription: 'Eonverse Time Capsule is an immersive 3D digital memory preservation platform. Users store digital artifacts, messages, and milestones inside interactive celestial orbits rendered through WebGL and Three.js, backed by secure Spring Boot APIs.',
     image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
-    tags: ['React', 'Three.js', 'Spring Boot'],
+    tags: ['React', 'Three.js', 'Spring Boot', 'WebGL'],
     githubUrl: 'https://github.com/Chintusa',
     liveUrl: '#',
     featured: true,
@@ -307,6 +373,94 @@ export const projects: Project[] = [
       'Implemented custom shaders, particle constellations, and smooth camera transitions.',
       'Constructed secure backend endpoints in Spring Boot for time-locked asset decryption.',
       'Achieved 60fps rendering performance with GPU memory optimization.'
+    ]
+  },
+  {
+    id: 'proj-harry-visuals',
+    title: 'Harry Visuals — Actor & Model Portfolio',
+    description: 'A high-octane personal branding platform for Sambalpuri film star Harry (250M+ views, 147K+ fans).',
+    longDescription: 'Harry Visuals is a high-impact personal media portfolio engineered for leading Sambalpuri actor, dancer, and fitness influencer Harry. It features categorized editorial galleries (Fashion, Fitness, Expressions, Calisthenics), integrated high-stream YouTube music video showcases with real-time analytics, and an integrated booking and commercial representation desk.',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1000&auto=format&fit=crop&q=80',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'YouTube API', 'Netlify'],
+    githubUrl: 'https://github.com/Chintusa',
+    liveUrl: 'https://harry-visuals.netlify.app/',
+    featured: false,
+    category: 'frontend',
+    categoryLabel: 'Celebrity Media Platform',
+    role: 'Frontend Developer & UI Designer',
+    primaryRuntime: 'React / Vite / Tailwind CSS',
+    databaseCloud: 'Netlify Edge & YouTube Data API',
+    highlights: [
+      'Curated high-resolution editorial photoshoot galleries with responsive lightboxes and categorized filters.',
+      'Embedded YouTube music video reels and performance analytics metrics across 250M+ views.',
+      'Commercial collaboration, sponsorship, and brand inquiry booking desk with validation.',
+      'Fully responsive touch-friendly layout built for mobile devices and social traffic.'
+    ]
+  },
+  {
+    id: 'proj-alambana',
+    title: 'Alambana Home Services Platform',
+    description: 'A multi-service on-demand marketplace connecting households with verified local service professionals.',
+    longDescription: 'Alambana is a community-focused gig economy and household services marketplace platform. It allows users to quickly search, hire, and schedule trusted local professionals for home tutoring, plumbing, car washing, yoga instruction, and housekeeping, supported by dedicated dual registration portals for customers and gig workers.',
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1000&auto=format&fit=crop&q=80',
+    tags: ['JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'REST API', 'Netlify'],
+    githubUrl: 'https://github.com/Chintusa',
+    liveUrl: 'https://alambana.netlify.app/',
+    featured: false,
+    category: 'fullstack',
+    categoryLabel: 'Gig Economy Marketplace',
+    role: 'Full Stack Web Developer',
+    primaryRuntime: 'HTML5 / CSS3 / JavaScript ES6',
+    databaseCloud: 'Netlify Hosting & REST API',
+    highlights: [
+      'Developed multi-service directory covering home tutoring, plumbing, car cleaning, and yoga instruction.',
+      'Built dual onboarding portals for customer hiring and professional gig-worker applications.',
+      'Implemented location-aware service filtering and appointment scheduling.',
+      'Deployed on Netlify with automated CI/CD and optimized asset compression.'
+    ]
+  },
+  {
+    id: 'proj-twogoco',
+    title: 'TwoGoCo Travel Portal',
+    description: 'A modern travel and booking interface designed for seamless holiday and tour package exploration.',
+    longDescription: 'TwoGoCo Clone is a modern travel and booking interface designed for seamless holiday and tour package exploration. It features responsive layouts, clean visual hierarchy, smooth navigation, and professional section-based design with zero layout shift.',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+    tags: ['React', 'Vite', 'Tailwind CSS', 'Responsive UI', 'Vercel'],
+    githubUrl: 'https://github.com/Chintusa',
+    liveUrl: 'https://twogoco-clone-nohjy699e-prangyanjali-mehers-projects.vercel.app/',
+    featured: false,
+    category: 'frontend',
+    categoryLabel: 'Travel & Tourism',
+    role: 'Frontend UI Developer',
+    primaryRuntime: 'React / Vite / Tailwind CSS',
+    databaseCloud: 'Vercel Edge Network',
+    highlights: [
+      'Interactive tour package showcase cards with pricing and destination highlights.',
+      'High-performance responsive image grids optimized for mobile and desktop screens.',
+      'Smooth section-based navigation and call-to-action booking flows.',
+      'Deployed globally on Vercel with automated Git integration.'
+    ]
+  },
+  {
+    id: 'proj-mocktail-bar',
+    title: 'Artisan Mocktail & Bistro Bar',
+    description: 'A beverage brand website with interactive drink menus, promotional carousels, and table reservations.',
+    longDescription: 'Artisan Mocktail Bar is a food and beverage website designed for a luxury refreshment brand. Includes fluid animations, menu carousels, customer review highlights, and an online table reservation module.',
+    image: 'https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=800&q=80',
+    tags: ['React', 'Tailwind CSS', 'Responsive UI', 'Vercel'],
+    githubUrl: 'https://github.com/Chintusa',
+    liveUrl: 'https://mocktailbar-beta.vercel.app/',
+    featured: false,
+    category: 'frontend',
+    categoryLabel: 'Food & Beverage',
+    role: 'Frontend Web Developer',
+    primaryRuntime: 'React / Tailwind CSS / Vite',
+    databaseCloud: 'Vercel Edge Network',
+    highlights: [
+      'Interactive drink and beverage menu with categorized visual items and ingredient tags.',
+      'Smooth micro-interactions and seasonal promotional carousels.',
+      'Table reservation request and inquiry flow with responsive layout.',
+      'Mobile-first responsive design tailored for cafe and restaurant patrons.'
     ]
   },
   {
@@ -372,27 +526,6 @@ export const projects: Project[] = [
       'Designed and developed school records tracking databases using strict relational MySQL configurations.',
       'Constructed dynamic, reusable view modules using JSP custom tags and Servlets backend routing patterns.',
       'Engineered administrative dashboards with session tracking and access restriction layers for robust security.'
-    ]
-  },
-  {
-    id: 'proj-alambana',
-    title: 'Alambana - Management Platform',
-    description: 'A real-time web-based support platform using Firebase for authentication, database, and hosting.',
-    longDescription: 'Created Alambana, a modern real-time management and student support platform. Leveraged Google Firebase services extensively to deliver instant synchronization and secure continuous integration hosting.',
-    image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Firebase', 'REST API'],
-    githubUrl: 'https://github.com/Chintusa',
-    liveUrl: '#',
-    featured: false,
-    category: 'fullstack',
-    categoryLabel: 'Web / Firebase',
-    role: 'Full Stack Web Developer',
-    primaryRuntime: 'HTML5 / CSS3 / JavaScript ES6',
-    databaseCloud: 'Firebase Firestore & Auth',
-    highlights: [
-      'Integrated Firebase Auth for seamless real-time student and admin authorization sessions.',
-      'Structured scalable Firestore document references with custom security rules.',
-      'Leveraged real-time listeners for instant chat messages and support ticket transitions.'
     ]
   },
   {
