@@ -244,6 +244,28 @@ export const timeline: TimelineItem[] = [
 
 export const projects: Project[] = [
   {
+    id: 'proj-elevate-coaching',
+    title: 'Elevate Coaching — Client Acquisition System',
+    description: 'A high-converting client acquisition system and live CRM pipeline engineered for business coaches targeting clients across the USA, UK, and Australia.',
+    longDescription: 'Elevate Coaching is an end-to-end client acquisition demonstration platform built for high-ticket online business and executive coaches targeting the USA, UK, and Australia. Engineered by CodeNPixels, it features an interactive 0–100 Growth Scorecard diagnostic lead magnet, real-time qualification tiering, automated 5-stage email drip nurturing, timezone-aware discovery call booking (US, UK, and Australia), and an interactive back-office CRM Kanban pipeline.',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=85&w=1200',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'CRM Pipeline', 'Framer Motion'],
+    githubUrl: 'https://github.com/Chintusa/elevate-coaching-',
+    liveUrl: 'https://github.com/Chintusa/elevate-coaching-',
+    featured: true,
+    category: 'fullstack',
+    categoryLabel: 'Full Stack & Automation',
+    role: 'Lead Architect & Full Stack Engineer',
+    primaryRuntime: 'React 19 / TypeScript / Vite',
+    databaseCloud: 'LocalStorage & Reactive Pipeline',
+    highlights: [
+      'Interactive 0-100 Growth Scorecard diagnostic lead magnet with real-time evaluation and dynamic archetype assignment.',
+      'Timezone-aware scheduling engine supporting USA (EST/PST), UK (GMT), and Australia (AEST).',
+      'Interactive 5-stage Kanban CRM pipeline with lead drawer and drag-to-advance stages.',
+      'Automated 4-email drip sequence with live preview modals and test simulation.'
+    ]
+  },
+  {
     id: 'proj-luxury-lens',
     title: 'Luxury Lens Studio (Lumière)',
     description: 'An editorial luxury destination wedding photography and cinematography showcase with noir-gold aesthetic.',
