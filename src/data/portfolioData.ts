@@ -136,6 +136,13 @@ export const featuredTools: FeaturedTool[] = [
 
 export const services: Service[] = [
   {
+    id: 'ai-funnels',
+    title: 'AI Funnels & Client Acquisition Automation',
+    description: 'High-converting interactive diagnostic funnels, automated lead qualification scorecards, CRM pipelines, and timezone-smart booking systems for US, UK & AU clients.',
+    icon: 'Workflow',
+    details: ['Interactive Scorecards', 'Timezone Booking', 'CRM Automation', 'React 19 / AI Drips']
+  },
+  {
     id: 'fullstack',
     title: 'Full Stack Development',
     description: 'Modern, reactive web applications built with React, TypeScript, and clean modular component architectures.',
